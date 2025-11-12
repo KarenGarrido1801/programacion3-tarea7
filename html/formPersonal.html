@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-Datos Personales</title>
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>DELOSSANTOS UNIVERSITY</h1>
+        <h2>Usted se esta registrando en nuestra universidad</h2> 
+    </header>    
+
+    <div>
+        <ul id="menu">
+            <li id="elegido"> Datos Personales</li>
+            <li>Datos Familiares</li>
+            <li>Datos Academicos</li>
+            <li>Datos Extracurriculares</li>
+        </ul>
+    </div>
+
+    <main>
+        <form id="form-personal" onsubmit="handleSubmit(event)">
+            <h3>Datos Pesonales</h3>
+            <label for="nombres">Nombres:</label>
+            <input id="nombres" type="text"><br>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text"><br>
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input id="fechaNacimiento" type="date"><br>
+            
+            <label for="sexo">Sexo:</label>
+            <input id="sexo" type="radio" name="sexo" value="sexoFemenino">
+            <label for="sexoFemenino">Femenino</label>
+            <input id="sexo" type="radio" name="sexo" value="sexoMasculido"> 
+            <label for="sexoMasculino">Masculino</label><br>
+            
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil">
+                <option value="soltera">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viudo">Viudo</option>
+            </select><br>
+            <label for="cedula">Cedula:</label>
+            <input id="cedula" type="text"><br>
+            <br>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input id="nacionalidad" type="text"><br>
+            <label>Lugar de nacionalidad:</label><br>
+            <label for="paisNacimiento">País:</label>
+            <input id="paisNacimiento" type="text">
+            <label for="provinciaNacimiento">provincia o ciudad:</label>
+            <input id="provinciaNacimiento" type="text"><br>
+            <label for="direccion">Dirección actual (calle, número, sector, ciudad, provincia):</label><br>
+            <input id="direccion" type="text"><br>
+            <br>
+            <label for="tipoSangre">Tipo de sangre:</label>
+            <select id="tipoSangre">
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="o+">O+</option>
+                <option value="o-">O-</option>
+            </select><br>
+            
+            <label for="padecimientoSioNo">¿Padece alguna condición médica o alergia relevante?</label>
+            <input id="padecimientoSioNo" type="checkbox" name="p"> <br/>
+
+            <label for="padecimiento">Especificar padecimiento:</label>
+            <input id="padecimiento" type="text"><br>
+            <br>
+            
+            <h3>Contactos</h3>
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="tel"><br>
+
+            <label for="correo">Correo Electronico</label>
+            <input id="correo" type="email"><br>
+            <br>
+            
+            <h3>Contactos de Emergencia</h3>
+            <label for="nombreDecontactoEmergencia">Nombre completo del contacto:</label>
+            <input id="nombreDecontactoEmergencia" type="text"><br>
+            <label for="relacionContactoEmergrncia">Relación con el estudiante:</label>
+            <select id="relacionContactoEmergrncia">
+                <option value="madre">Madre</option>
+                <option value="padre">Padre</option>
+                <option value="hermano">Hermano/a</option>
+                <option value="tio">Tio/a</option>
+                <option value="abuelo">Abuelo/a</option>
+            </select><br>
+            <label for="telefonoEmergencia">Telefono de Emergencia:</label>
+            <input id="telefonoEmergencia" type="tel"><br>
+            <label for="correoEmergencia">Correo del contacto:</label>
+            <input id="correoEmergencia" type="email">
+            <br><br>
+            <a href="/index.html"><button type="button">Anterior</button></a>
+            <button type="button" onclick="clearForm(event)">Limpiar</button>
+            <button id="btn-siguiente" type="submit">Siguiente</button>
+        </form>    
+    </main>
+
+    <script src="../js/formPersonal.js"></script>
+</body>
+</html>

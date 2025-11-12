@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    justify-items: center;
+    background-color: rgb(91, 123, 182);
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+ 
+img {
+    width: 1800px;
+    height: 600px;
+}
+
+div > p , div > h3 , div > h2 , div > a{
+    margin: 5px;
+}
+
+footer {
+    margin: 5px;
+}
+

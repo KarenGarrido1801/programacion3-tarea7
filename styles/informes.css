@@ -1,0 +1,28 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(91, 123, 182);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    padding: 20px;
+    background-color: rgb(190, 213, 255);
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    justify-content: end;
+}

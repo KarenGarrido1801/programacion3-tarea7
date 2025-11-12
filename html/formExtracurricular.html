@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-Datos </title>
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>DELOSSANTOS UNIVERSITY</h1>
+        <h2>Usted se esta registrando en nuestra universidad</h2>
+    </header>
+    <div>
+        <ul id="menu">
+            <li>Datos Personales</li>
+            <li>Datos Familiares</li>
+            <li>Datos Academicos</li>
+            <li id="elegido">Datos Extracurriculares</li>
+        </ul>
+    </div>
+
+    <main>
+        <form id="form-extracurricular" onsubmit="handleSubmit(event)">
+            <h3>Datos Extracurriculares</h3>
+            <label for="deportes">¿Practica algún deporte?</label>
+            <input id="deportes" type="text"><br>
+
+            <label for="actividades">¿Participa en actividades artísticas o culturales?</label>
+            <input id="actividades" type="text"><br>
+
+            <label for="clubes">¿Ha formado parte de clubes estudiantiles o grupos sociales?</label>
+            <input id="clubessi" type="radio" name="clubes" value="Si">
+            <input id="clubesno" type="radio" name="clubes" value="No"><br>
+
+            <label for="idioma">Idioma que dominas:</label>
+            <select id="idioma">
+                <option value="ingles">ingles</option>
+                <option value="frances">frances</option>
+                <option value="italiano">italiano</option>
+                <option value="otro">otro</option>
+                <option value="ninguno">Ninguno</option>
+            </select><br>
+            <label for="nivelIdioma">Nivel de conocimiento del idioma:</label>
+            <select id="nivelIdioma">
+                <option value="bajo">Bajo</option>
+                <option value="medio">Medio</option>
+                <option value="alto">Alto</option>
+            </select><br>
+            <label for="HabilidadesInf">Habilidades tecnológicas o informáticas:</label>
+            <select id="HabilidadesInf">
+                <option value="baja">Bajo</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+                <option value="ninguna">ninguna</option>
+            </select><br>
+            <label for="pasatiempo">Pasatiempos o intereses personales:</label>
+            <input id="pasatiempo" type="text"><br>
+            <br>
+            <a href="/html/formAcademico.html"><button type="button">Anterior</button></a>
+            <button type="button" onclick="clearForm(event)">Limpiar</button>
+            <button id="btn-siguiente" type="submit"> Siguiente</button>
+            
+        </form>
+
+    </main>
+    <script src="/js/formExtracurricular.js"></script>
+</body>
+</html>

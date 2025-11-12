@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-Datos </title>
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>DELOSSANTOS UNIVERSITY</h1>
+        <h2>Usted se esta registrando en nuestra universidad</h2>
+    </header>
+
+    <div>
+        <ul id="menu">
+            <li>Datos Personales</li>
+            <li id="elegido">Datos Familiares</li>
+            <li>Datos Academicos</li>
+            <li>Datos Extracurriculares</li>
+        </ul>
+    </div>
+
+    <main>
+        <form id="form-familiar" onsubmit="handleSubmit(event)">
+            <h3>Datos Familiares</h3>
+            <!-- Madre -->
+            <label for="nombreMadre">Nombre completo la madre</label>
+            <input id="nombreMadre" type="text"><br>
+            <label for="telefonoMadre">Teléfono de la madre</label>
+            <input id="telefonoMadre" type="text"><br>
+            <label for="ocupacionMadre">Ocupación de la madre</label>
+            <select id="ocupacionMadre">
+                <option value="estudiante">Estudiante</option>
+                <option value="amaDeCasa">Ama de caca</option>
+                <option value="asistente">Asistente</option>
+                <option value="vendedor">Vendedor/ra</option>
+                <option value="licenciado">licenciado/a</option>
+                <option value="ingeniero">Ingeniero/a</option>
+                <option value="independiente">Independiente</option>
+            </select><br>
+            <label for="nivelAcademicoMadre">Nivel Academico de la madre</label>
+            <select id="nivelAcademicoMadre">
+                <option value="basica">Educación Basica</option>
+                <option value="media">Educación Media</option>
+                <option value="superior" selected>Nivel Superior</option>
+                <option value="maestria">Maestría</option>
+            </select><br>
+
+            <!-- Padre -->
+            <br>
+            <label for="nombrePadre">Nombre completo del Padre</label>
+            <input id="nombrePadre" type="text"><br>
+            <label for="telefonoPadre">Teléfono del Padre</label>
+            <input id="telefonoPadre" type="text"><br>
+            <label for="ocupacionPadre">Ocupación del Padre</label>
+            <select id="ocupacionPadre">
+                <option value="estudiante">Estudiante</option>
+                <option value="amaDeCasa">Ama de caca</option>
+                <option value="asistente">Asistente</option>
+                <option value="vendedor">Vendedor/ra</option>
+                <option value="licenciado">licenciado/a</option>
+                <option value="ingeniero">Ingeniero/a</option>
+                <option value="independiente">Independiente</option>
+            </select><br>
+            <label for="nivelAcademicoPadre">Nivel Academico del Padre</label>
+            <select id="nivelAcademicoPadre">
+                <option value="basica">Educación Basica</option>
+                <option value="media">Educación Media</option>
+                <option value="superior" selected>Nivel Superior</option>
+                <option value="maestria">Maestría</option>
+            </select><br>
+
+            <!-- tutor -->
+            <h4>En caso que el tutor responsable del estudiante sea diferente a la madre y el padre:</h4>
+            <label for="nombreTutor">Nombre completo del tutor</label>
+            <input id="nombreTutor" type="text"><br>
+            <label for="telefonoTutor">Teléfono del tutor</label>
+            <input id="telefonoTutor" type="text"><br>
+            <label for="ocupacionTutor">Ocupación del tutor</label>
+            <select id="ocupacionTutor">
+                <option value=" "> </option>
+                <option value="estudiante">Estudiante</option>
+                <option value="amaDeCasa">Ama de caca</option>
+                <option value="asistente">Asistente</option>
+                <option value="vendedor">Vendedor/ra</option>
+                <option value="licenciado">licenciado/a</option>
+                <option value="ingeniero">Ingeniero/a</option>
+                <option value="independiente">Independiente</option>
+            </select><br>
+            <label for="nivelAcademicoTutor">Nivel Academico del Tutor</label>
+            <select id="nivelAcademicoTutor">
+                <option value=" "> </option>
+                <option value="basica">Educación Basica</option>
+                <option value="media">Educación Media</option>
+                <option value="superior">Nivel Superior</option>
+                <option value="maestria">Maestría</option>
+            </select><br>
+            <label for="direccionTutor">Dirección del tutor</label>
+            <input id="direccionTutor" type="text"><br>
+            <label for="relacionTutor">Relación con el estudiante</label>
+            <select id="relacionTutor">
+                <option value=" "> </option>
+                <option value="hermano">Hermano/a</option>
+                <option value="tio">Tio/a</option>
+                <option value="abuelo">Abuelo/a</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+            <a href="/html/formPersonal.html"><button type="button">Anterior</button></a>
+            <button type="button" onclick="clearForm(event)">Limpiar</button>
+            <button id="btn-siguiente" type="submit">Siguiente</button>
+        </form>
+        
+    </main>
+    <script src="/js/formFamiliar.js"></script>
+</body>
+</html>

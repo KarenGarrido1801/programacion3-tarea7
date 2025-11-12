@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-Datos </title>
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>DELOSSANTOS UNIVERSITY</h1>
+        <h2>Usted se esta registrando en nuestra universidad</h2>
+        
+    </header>
+    <div>
+        <ul id="menu">
+            <li>Datos Personales</li>
+            <li>Datos Familiares</li>
+            <li id="elegido">Datos Academicos</li>
+            <li>Datos Extracurriculares</li>
+        </ul>
+    </div>
+
+    <main>
+        <form id="form-academic" onsubmit="handleSubmit(event)">
+            <h3>Datos Academicos</h3>
+            <label for="nombreInstitucion">Nombre del colegio o institución de procedencia:</label>
+            <input id="nombreInstitucion" type="text"><br>
+
+            <label>Tipo de institución:</label>
+            <input id="institucionPublica" type="radio" name="institucion" value="publica" >
+            <label for="institucionPublica">Pública</label>
+
+            <input id="institucionPrivada" type="radio" name="institucion" value="privada">
+            <label for="institucionPrivada">Privada</label><br>
+
+            <label for="anioBachillerato">Año de finalización del bachillerato:</label>
+            <select id="anioBachillerato">
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+            </select><br>
+            <label for="promedio">Promedio general obtenido:</label>
+            <input id="promedio" type="text"><br>
+
+            <label for="cursoRepetido">¿Ha repetido algún curso?</label>
+            <input id="cursoRepetido" type="radio" name="curso" value="true"> 
+            <label for="cursoRepetido">Si</label>
+            <input id="cursoRepetido" type="radio" name="curso" value="false">
+            <label for="cursoRepetido">No</label><br>
+            
+            <label for="carrera">Carrera o programa al que desea ingresar:</label>
+            <select id="carrea">
+                <option value="Psicologia">Psicología</option>
+                <option value="Sociologia">Sociología</option>
+                <option value="Derecho">Derecho</option>
+                <option value="Filosofia">Filosofía</option>
+                <option value="AdministraciónEmpresas">Administración de Empresas</option>
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="ArtesModernas">Artes Modernas</option>
+                <option value="Matematicas">Matemáticas</option>
+                <option value="Magisterio">Magisterio</option>
+                <option value="Ingenieria">Ingenieria</option>
+                <option value="Medicina">Medicina</option>
+                <option value="Bioanalisis">Bioanálisis</option>
+                <option value="Odontologia">Odontología</option>
+                <option value="Tecnologia">Tecnología</option>
+            </select><br>
+            <label for="motivoCarrera">Motivo de elección de la carrera:</label>
+            <input id="motivoCarrera" type="text"><br>
+            <label for="turno">Turno preferido:</label>
+            <select id="turno">
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="nocturno">Nocturno</option>
+            </select>
+            <br><br>
+            <a href="/html/formFamiliar.html"><button type="button">Anterior</button></a>
+            <button type="button" onclick="clearForm(event)">Limpiar</button>
+            <button id="btn-siguiente" type="submit">Siguiente</button>
+        </form>
+
+    </main>
+    <script src="/js/formAcademico.js"></script>
+</body>
+</html>
